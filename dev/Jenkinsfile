@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_REGISTRY = credentials('DOCKER_REGISTRY') // Jenkins credentials ID for Docker Registry
-        IMAGE_NAME = 'cicd-pipeline-node'               // Docker image name
+        IMAGE_NAME = 'django'               // Docker image name
         IMAGE_TAG = "${BUILD_NUMBER}"                  
     }
 
