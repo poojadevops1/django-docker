@@ -1,6 +1,6 @@
 FROM python:3.14.0a3-slim-bullseye
 WORKDIR /app
-COPY requirements.txt /app/
+COPY dev/requirements.txt /app/
 COPY dev /app/
 
 RUN python -m pip install --no-cache-dir -r requirements.txt
