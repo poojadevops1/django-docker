@@ -10,7 +10,7 @@ RUN apk add --no-cache --virtual .build-deps \
     libpq-dev
 
 # Copy requirements and install Python packages
-COPY requirements.txt /app/
+COPY django/requirements.txt /app/
 RUN python -m pip install --no-cache-dir -r requirements.txt
 
 # Final image
